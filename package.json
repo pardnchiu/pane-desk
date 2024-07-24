@@ -6,6 +6,7 @@
   "scripts": {
     "minify": "npx terser js/PaneDesk/*.js -c -m -o js/PaneDesk.min.js --config-file terser.config.json --name-cache terser.cache.json",
     "minify-watch": "chokidar 'js/PaneDesk/*.js' -c 'npm run minify'",
+    "minify-index": "npx terser js/index.js -c -m -o js/index.min.js --config-file terser.config.json --name-cache terser.cache.json",
     "sass": "sass sass/:css/ -w --style compressed --no-source-map"
   },
   "author": "",
